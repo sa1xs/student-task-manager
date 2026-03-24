@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Task Manager</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-    <body>
-    <div class="container">
-        <h1>Mis tareas</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets\22a3ab16269821.562a8602153f7.png">
+  </head>
+      <body>
+        <header class="header">
+          <h1>Student Task Manager</h1>
+        </header>
+      
+        <main>
+          <div class="container">
+            <h1>Mis tareas</h1>
 
-        <form id="taskForm">
-        <input type="text" id="taskInput" placeholder="Escribe una tarea">
-        <button type="submit">Agregar</button>
-        </form>
+            <form id="taskForm">
+              <input type="text" id="taskInput" placeholder="Escribe una tarea">
+              <button type="submit">Agregar</button>
+            </form>
+            <ul id="taskList"></ul>
+          </div>
+        </main>
 
-        <ul id="taskList"></ul>
-    </div>
+        <footer>
 
-    <script src="script.js"></script>
-    </body>
+        </footer>
+
+      <script src="script.js"></script>
+      </body>
 </html>
