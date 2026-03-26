@@ -56,3 +56,19 @@ li {
   padding: 20px;
   border-radius: 8px;
 }
+
+hr {
+  margin: 30px;
+  border: 1px solid #1f2937;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+footer img {
+  width: 50%;
+  height: auto;
+  border-radius: 15px;
+}
