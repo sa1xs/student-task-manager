@@ -1,20 +1,16 @@
-const taskForm = document.getElementById("taskForm");
 const taskInput = document.getElementById("taskInput");
 const taskList = document.getElementById("taskList");
 
-taskForm.addEventListener("submit", function (event) {
+document.querySelector("form").addEventListener("submit", (event) => {
   event.preventDefault();
 
   const taskText = taskInput.value.trim();
 
-  if (taskText === "") {
-    alert("Escribe una tarea");
-    return;
+  if (taskText !== "") {
+    const li = document.createElement("li");
+    li.innerHTML = taskText;
+    taskList.appendChild(li);
+
+    taskInput.value = "";
   }
-
-  const li = document.createElement("li");
-  li.textContent = taskText;
-
-  taskList.appendChild(li);
-  taskInput.value = "";
-});
+})
